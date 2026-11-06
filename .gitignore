@@ -1,0 +1,31 @@
+# Virtual environment & local ADB keys
+cleanyourtv/tools/venv/
+cleanyourtv/tools/adbkey/
+**/__pycache__/
+
+# Android / Gradle build outputs & local SDK paths
+cleanyourtv/launcher/.gradle/
+cleanyourtv/launcher/build/
+cleanyourtv/launcher/app/build/
+cleanyourtv/launcher/local.properties
+cleanyourtv/launcher/hs_err_pid*.log
+cleanyourtv/launcher/replay_pid*.log
+
+# Local TV dumps, screenshots, and traces (never commit personal device data)
+backup/
+cleanyourtv/backup/
+shots/
+cleanyourtv/shots/
+work/
+cleanyourtv/work/
+traces/
+cleanyourtv/traces/
+bench-results/
+cleanyourtv/bench-results/
+.DS_Store
+Thumbs.db
+
+# Ignore intermediate APKs except the pre-built Vice City release APK
+*.aab
+!themes/vice-city/tvhome-gta6-release.apk
+!cleanyourtv/themes/vice-city/tvhome-gta6-release.apk
